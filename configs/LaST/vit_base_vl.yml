@@ -1,0 +1,76 @@
+MODEL:
+  PRETRAIN_CHOICE: 'flickr'
+  PRETRAIN_PATH: '/pretrain/finetuned_checkpoint_for_retrieval_on_Flickr30k/flickr30k.pth'
+  METRIC_LOSS_TYPE: 'triplet'
+  IF_LABELSMOOTH: 'off'
+  IF_WITH_CENTER: 'no'
+  NAME: 'multimodal_transformer'
+  NO_MARGIN: True
+  DEVICE_ID: ('0')
+  TRANSFORMER_TYPE: 'vit_base_patch16_224_TransReID_VL'
+  STRIDE_SIZE: [16, 16]
+  VISION_WIDTH: 768
+  EMBED_DIM: 256
+  USE_MASK: True
+  TEMP: 0.5 #0.07
+
+TEXT:
+  TEXT_ENCODER: 'bert-base-uncased'
+  BERT_CONFIG: 'config/config_bert.json'
+
+INPUT:
+  SIZE_TRAIN: [256, 128]
+  SIZE_TEST: [256, 128]
+  PROB: 0.5 # random horizontal flip
+  RE_PROB: 0.5 # random erasing
+  PADDING: 10
+  PIXEL_MEAN: [0.5, 0.5, 0.5]
+  PIXEL_STD: [0.5, 0.5, 0.5]
+
+DATASETS:
+  NAMES: ('last_vl')
+  ROOT_DIR: ('/data/person_reid/last_vl')
+
+DATALOADER:
+  SAMPLER: 'softmax_triplet'
+  NUM_INSTANCE: 4
+  NUM_WORKERS: 8
+
+SOLVER:
+  OPTIMIZER_NAME: 'SGD'
+  MAX_EPOCHS: 120
+  BASE_LR: 0.008
+  IMS_PER_BATCH: 8    # 32
+  WARMUP_METHOD: 'linear'
+  LARGE_FC_LR: False
+  CHECKPOINT_PERIOD: 120
+  LOG_PERIOD: 50
+  EVAL_PERIOD: 120
+  WEIGHT_DECAY:  1e-4
+  WEIGHT_DECAY_BIAS: 1e-4
+  BIAS_LR_FACTOR: 2
+
+TEST:
+  EVAL: True
+  IMS_PER_BATCH: 64      # 256
+  RE_RANKING: False
+  WEIGHT: '/logs/duke_vit_base/transformer_120.pth'
+  NECK_FEAT: 'before'
+  FEAT_NORM: 'yes'
+
+OUTPUT_DIR: ''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
