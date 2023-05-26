@@ -51,7 +51,10 @@ python train_rstp.py
 
 ### Trained Models
 We provide our trained models at [Baidu Pan](https://pan.baidu.com/s/1lfZoVp9Uxu3Viw3j2nHoAw)[bpvu].
- 
+
+### Text-based re-ID Datasets
+You can obtain the datasets from corresponding authors. We provide our processed json files at [Baidu Pan](https://pan.baidu.com/s/1c1iisU9h-r0Jw15NV7e5Ug)[xktc].
+
 ## Citations
 If you find our work helpful, please cite using this BibTeX:
 ```bibtex 
