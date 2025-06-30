@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ## Getting Started
 ### Pretrain
-You can use our [pre-trained model](https://pan.baidu.com/s/1CMuU1Qnummscgw86smmN_A)[zxvu] directly,
+You can use our [pre-trained model](https://pan.baidu.com/s/1j_fD_4EDgUqspuZb76HAEA)[a7pc] directly,
 otherwise,
 you need to download several datasets: [Conceptual Captions](https://aclanthology.org/P18-1238.pdf), [SBU Captions](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf), [COCO](https://arxiv.org/pdf/1405.0312.pdf%090.949.pdf), and [Visual Genome](https://link.springer.com/article/10.1007/S11263-016-0981-7)
 
@@ -50,7 +50,7 @@ python train_rstp.py
  
 
 ### Trained Models
-We provide our trained models at [Baidu Pan](https://pan.baidu.com/s/1lfZoVp9Uxu3Viw3j2nHoAw)[bpvu].
+We provide our trained models at [Baidu Pan](https://pan.baidu.com/s/1afnwtJahbWSjbjRuFw_48g)[585y].
 
 ### Text-based re-ID Datasets
 You can obtain the datasets from corresponding authors. We provide our processed json files at [Baidu Pan](https://pan.baidu.com/s/1c1iisU9h-r0Jw15NV7e5Ug)[xktc].
