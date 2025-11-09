@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ## Getting Started
 ### Pretrain
-You can use our [pre-trained model](https://pan.baidu.com/s/1j_fD_4EDgUqspuZb76HAEA)[a7pc] directly,
+You can use our [pre-trained model](https://pan.baidu.com/s/1WhER88bIOl0-4z0UI0u7iQ?pwd=7gwy)[7gwy] directly,
 otherwise,
 you need to download several datasets: [Conceptual Captions](https://aclanthology.org/P18-1238.pdf), [SBU Captions](https://proceedings.neurips.cc/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf), [COCO](https://arxiv.org/pdf/1405.0312.pdf%090.949.pdf), and [Visual Genome](https://link.springer.com/article/10.1007/S11263-016-0981-7)
 
@@ -50,7 +50,7 @@ python train_rstp.py
  
 
 ### Trained Models
-We provide our trained models at [Baidu Pan](https://pan.baidu.com/s/1afnwtJahbWSjbjRuFw_48g)[585y].
+We provide our trained models at [Baidu Pan](https://pan.baidu.com/s/1-MaN56ubrW3s07MA8Io4hw?pwd=nm8k)[7gwy].
 
 ### Text-based re-ID Datasets
 You can obtain the datasets from corresponding authors. We provide our processed json files at [Baidu Pan](https://pan.baidu.com/s/1c1iisU9h-r0Jw15NV7e5Ug)[xktc].
@@ -71,6 +71,7 @@ If you find our work helpful, please cite using this BibTeX:
 ## Contact us
 If you have any questions, comments or suggestions, please do not hesitate to contact us at shuxj@mail.ioa.ac.cn.
  
-
+## License
+MIT: https://rem.mit-license.org
 
 
